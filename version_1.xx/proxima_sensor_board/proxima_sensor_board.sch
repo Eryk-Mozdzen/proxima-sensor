@@ -120,7 +120,7 @@ U 1 1 6104053D
 P 8150 4700
 F 0 "J1" H 8230 4742 50  0000 L CNN
 F 1 "Conn_01x03" H 8230 4651 50  0000 L CNN
-F 2 "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical" H 8150 4700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8150 4700 50  0001 C CNN
 F 3 "~" H 8150 4700 50  0001 C CNN
 	1    8150 4700
 	1    0    0    -1  
