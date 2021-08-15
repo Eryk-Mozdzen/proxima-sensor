@@ -156,7 +156,7 @@ L Device:LED D2
 U 1 1 6104F2F8
 P 10050 4550
 F 0 "D2" V 10089 4432 50  0000 R CNN
-F 1 "LED" V 9998 4432 50  0000 R CNN
+F 1 "YELLOW_LED" V 9998 4432 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 10050 4550 50  0001 C CNN
 F 3 "~" H 10050 4550 50  0001 C CNN
 	1    10050 4550
@@ -167,7 +167,7 @@ L Device:R R5
 U 1 1 6105004E
 P 10050 4850
 F 0 "R5" H 10120 4896 50  0000 L CNN
-F 1 "500" H 10120 4805 50  0000 L CNN
+F 1 "270" H 10120 4805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9980 4850 50  0001 C CNN
 F 3 "~" H 10050 4850 50  0001 C CNN
 	1    10050 4850
@@ -190,8 +190,8 @@ Wire Wire Line
 	10000 5050 10050 5050
 Wire Wire Line
 	10050 5050 10050 5000
-Text Notes 1350 2650 0    50   ~ 10
-IR led resistor calculations:\n\nTarget current I = 50mA\nInput voltage U = 3.3V\nVoltage drop Ud = 1.1V\n\nR = (U-Ud)/I\nR = (3.3 - 1.1)/0.05 = 44 ohm -> 47 ohm
+Text Notes 700  2900 0    50   ~ 10
+IR led resistor calculations:\n\nTarget current I = 50mA\nInput voltage U = 3.3V\nVoltage drop Ud = 1.1V\n\nR = (U-Ud)/I\nR = (3.3 - 1.1)/0.05 = 44 ohm -> 47 ohm\n\nPower dissipation on resistor:\nCurrent I = 50mA\n\nP = R * I^2\nP = 47 * 0.05 * 0.05 = 0.1175 W\n\n0.1175W < 0.2W (max power dissipation on 0805 case)
 $Comp
 L Timer:NE555D U2
 U 1 1 6106AC26
@@ -373,4 +373,6 @@ Text Notes 8500 4050 0    100  ~ 20
 Interface
 Text Notes 7800 4300 0    50   ~ 10
 Active low, NPN
+Text Notes 9300 6100 0    50   ~ 10
+Yellow led resistor calculations:\n\nTarget current I = 5mA\nInput voltage U = 3.3V\nVoltage drop Ud = 2V\n\nR = (U-Ud)/I\nR = (3.3 - 2)/0.005 = 260 ohm -> 270 ohm
 $EndSCHEMATC
