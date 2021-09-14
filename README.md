@@ -29,3 +29,4 @@ Simple, low cost, IR proximity sensor, designed for minisumo class robots. Opera
 	* increase hole diameter
 
 ### To do:
+- print & test improved case
