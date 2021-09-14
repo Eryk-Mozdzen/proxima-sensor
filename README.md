@@ -2,12 +2,14 @@
 
 Simple, low cost, IR proximity sensor, designed for minisumo class robots. Operates at 56 kHz frequency. Dimensions: 12x17x15 mm.
 
-## Projects targets
+## Projects goals
 - \>20cm detection range
-- 3.3/5V power supply
-- small dimensions
-- not operating at 38 kHz ([robot start module](https://p1r.se/startmodule/) frequency)
+- 3.3/5V power supply voltage
+- \<100mA power supply current
 - single logic output
+- smallest possible dimensions
+- not operating at 38 kHz ([robot start module](https://p1r.se/startmodule/) frequency)
+- plastic case
 - status led
 
 ## Workflow
